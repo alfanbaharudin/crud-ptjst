@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Container } from "reactstrap";
 import { Table } from "./components/Table";
 import logo from './jst.png';
+import TableAPIPost from "./components/TableAPIPost";
+import TableAPIComments from "./components/TableAPIComments";
 export default class App extends Component {
   state = {
     title:"Web Alfan for PT.JST",
@@ -170,7 +172,10 @@ export default class App extends Component {
         <div className="text-center">
           <img className="mb-5 mt-3" src={logo} alt="Logo" />
         </div>
-        <Table users={this.state.users} delete={(id)=>this.deleteUser(id)} /><hr />
+        <Table users={this.state.users} delete={(id)=>this.deleteUser(id)} />
+        <TableAPIPost />
+        <TableAPIComments />
+        <hr />
         <p class="text-center text-muted">© 2022 PT. Juke Solusi Teknologi by Alfan Baharudin.</p>
       </Container>
     )
