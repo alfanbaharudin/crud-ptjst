@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.Logo {
+  background-image: url(./jst.png);
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  }
