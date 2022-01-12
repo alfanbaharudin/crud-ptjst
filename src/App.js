@@ -1,5 +1,3 @@
-// Main
-
 import React, { Component } from "react";
 import { Container } from "reactstrap";
 import { Table } from "./components/Table";
