@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit,faTrash, faPlus} from '@fortawesome/free-solid-svg-icons';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import swal from 'sweetalert';
-import { Modal, Row, Col } from 'react-bootstrap';
+import { Modal, Row, Col, Card } from 'react-bootstrap';
 import filterFactory, { textFilter } from 'react-bootstrap-table2-filter';
 
 const defaultSorted = [{
@@ -166,14 +166,17 @@ export const Table = (props) => {
         </Modal.Body>
       </Modal>
 
-      <BootstrapTable
-          bootstrap4 
-          keyField='id'
-          data={ props.users } 
-          columns={ columns } 
-          defaultSorted={ defaultSorted } 
-          filter={ filterFactory() }
-          pagination={ paginationFactory() } />
+      <Card>
+        <BootstrapTable
+            bootstrap4 
+            keyField='id'
+            data={ props.users } 
+            columns={ columns } 
+            defaultSorted={ defaultSorted } 
+            filter={ filterFactory() }
+            pagination={ paginationFactory() } />
+      </Card>
+      
     </div>
   )
 }

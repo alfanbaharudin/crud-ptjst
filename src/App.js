@@ -4,6 +4,7 @@ import { Table } from "./components/Table";
 import logo from './jst.png';
 import TableAPIPost from "./components/TableAPIPost";
 import TableAPIComments from "./components/TableAPIComments";
+import './App.css';
 export default class App extends Component {
   state = {
     title:"Web Alfan for PT.JST",
