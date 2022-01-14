@@ -3,7 +3,9 @@ import { Container } from "reactstrap";
 import { Table } from "./components/Table";
 import logo from './jst.png';
 import TableAPIPost from "./components/TableAPIPost";
+import Table2APIPost from "./components/Table2APIPost";
 import TableAPIComments from "./components/TableAPIComments";
+import Table2APIComments from "./components/Table2APIComments";
 import './App.css';
 export default class App extends Component {
   state = {
@@ -174,6 +176,8 @@ export default class App extends Component {
           <img className="mb-5 mt-3" src={logo} alt="Logo" />
         </div>
         <Table users={this.state.users} delete={(id)=>this.deleteUser(id)} />
+        <Table2APIPost />
+        <Table2APIComments />
         <TableAPIPost />
         <TableAPIComments />
         <hr />

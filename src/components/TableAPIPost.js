@@ -42,7 +42,7 @@ class TableAPIPost extends Component {
         });
         return (
             <div style={{backgroundColor: '#FEF7CB', padding:'3%'}}>
-                <h2 className='text-center' style={{padding: '3%'}}>Data Table API (POST)</h2>
+                <h2 className='text-center' style={{padding: '3%'}}>Data List API (POST)</h2>
                 <Container>
                     {tableapi1}
                 </Container>
