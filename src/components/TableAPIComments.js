@@ -43,7 +43,7 @@ class TableAPIComments extends Component {
         });
         return (
             <div style={{backgroundColor: '#C2F9DC', padding:'3%'}}>
-                <h2 className='text-center' style={{padding: '3%'}}>Data Table API (Comments)</h2>
+                <h2 className='text-center' style={{padding: '3%'}}>Data List API (Comments)</h2>
                 <Container>
                     {tableapi2}
                 </Container>
